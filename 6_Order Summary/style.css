@@ -1,0 +1,108 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Assets/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 2rem hsla(224, 23%, 55%, 0.432);
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+    height: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* section 2 - summary container*/
+.summary-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3vh;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.summary-container h2 {
+    font-weight: 900;
+}
+
+.summary-container p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.price-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-section a {
+    font-weight: 700;
+}
+
+button {
+    font-size: 1rem;
+    background:  hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    padding: .6rem 0;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 2rem hsla(224, 23%, 55%, 0.562);
+}
+
+button:hover {
+    cursor: pointer;
+    background: hsla(245, 75%, 52%, 0.699);
+}
+
+.summary-container h4 {
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+/* media queries for larger screens/Desktops */
+@media screen and (min-width: 800px) {
+    html,body {
+        background-image: url(Assets/pattern-background-desktop.svg);
+    }
+    main {
+        width: 35vw;
+        height: 80vh;
+    }
+}
+
