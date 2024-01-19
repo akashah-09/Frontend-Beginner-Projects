@@ -1,0 +1,138 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3vh 0vh;
+}
+
+main {
+    height: 135vh;
+    width: 85vw;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: white;
+}
+
+main h1 {
+    font-size: 4vh;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+
+main p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.5vh;
+}
+
+.container-one {
+    background-color: hsl(31, 77%, 52%);
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10% 20%;
+}
+
+.container-one button {
+    color: hsl(31, 77%, 52%);
+}
+
+.container-two {
+    background-color: hsl(184, 100%, 22%);
+    height: 34%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10% 20%;
+}
+
+.container-two button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container-three {
+    background-color: hsl(179, 100%, 13%);
+    height: 33%;
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10% 20%;
+}
+
+.container-three button{
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    border: none;
+    width: 70%;
+    padding: 1.5vh;
+    border-radius: 3rem;
+}
+
+button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Media queries for larger screens or desktops */
+@media screen and (min-width: 1000px) {
+    html,body {
+        align-items: center;
+    }
+
+    main {
+        flex-direction: row;
+        width: 75vw;
+        height: 75vh;
+    }
+
+    main p {
+        font-size: 1.2vw;
+        margin-bottom: 5vw;
+    }
+
+    main h1 {
+        font-size: 3.5vw;
+    }
+
+    .container-one {
+        width: 33%;
+        height: 100%;
+        justify-content:flex-start;
+        padding: 5vw 5vw;
+        gap: 3vw;
+    }
+
+    .container-two {
+        width: 34%;
+        height: 100%;
+        justify-content:flex-start;
+        padding: 5vw 5vw;
+        gap: 3vw;
+    }
+
+    .container-three {
+        width: 33%;
+        height: 100%;
+        justify-content:flex-start;
+        padding: 5vw 5vw;
+        gap: 3vw;
+}
