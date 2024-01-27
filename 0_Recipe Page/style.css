@@ -1,0 +1,87 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+html,body {
+    background-color: hsl(30, 54%, 90%);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    font-size: 1rem;
+    gap: 2%;
+    
+}
+
+main {
+    background: white;
+    width: 70vw;
+    min-height: 160vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.hero-image {
+    margin-bottom: 2vh;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.heading h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+
+ul,ol,table {
+    margin-left: 4%;
+}
+
+li,p {
+    color: hsla(0, 0%, 0%, 0.829); 
+}
+
+.prepration-time, .Ingredient, .Instructions, .Nutrition  {
+    background-color:  hsl(330, 100%, 98%);
+    padding: 2%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+tr td:last-child {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px){
+    .heading h1 {
+        font-size: 3vh;
+    }
+}
+
+
+
+
+
+
+
