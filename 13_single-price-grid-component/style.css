@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+header {
+    max-width: 80%;
+    margin-inline: auto;
+    margin-block: 4rem;
+    display: grid;
+    gap: 1.5rem;
+    color: hsl(71, 73%, 54%);
+}
+
+header h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+header p {
+    margin-top: -0.8rem;
+    color: hsl(218, 22%, 67%);
+}
+
+main {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 4rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.column:first-of-type {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.column:last-of-type {
+    background-color: hsl(179, 52%, 53%);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(219, 33%, 84%);
+}
+
+button {
+    padding-inline: 5rem;
+    padding-block: 0.8rem;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 0.4rem 0.2rem hsla(0, 0%, 0%, 0.11);
+    border-radius: 0.2rem;
+    margin-top: 1.5rem;
+}
+
+
+/* Media queries for mobiles or small screens */
+@media screen and (max-width: 800px) {
+    main {
+        width: 90%;
+        display: grid;
+        margin-inline: auto;
+    }
+
+    .column {
+        padding: 3rem 2rem;
+    }
+}
